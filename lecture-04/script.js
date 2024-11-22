@@ -1,4 +1,13 @@
-// constrcutor function 
+// How to define Functions , 
+
+// simple function 
+
+// function welcome(){
+//     return 20;
+// }
+
+// What is the diffence between constrcutor function and simple function,
+// simple function we can't create an object from this
 
 // function welcome(name, lname, rollNumber){
 //     return `${name} ${lname} ${rollNumber}`
@@ -9,13 +18,13 @@
 // console.log(userWeclome);
 // console.log(welcome('Ghazi', "orhan", 2));
 
-// How to define Functions , 
-
-// simple function 
-
-// function welcome(){
-//     return 20;
+// function Person (fname, lname, age, eyeColor){
+//     this.firstName = fname;
+//     this.lastName = lname;
+//     this.age = age;
+//     this.eyeColor = eyeColor;
 // }
+
 
 // fucntion as variable 
 
