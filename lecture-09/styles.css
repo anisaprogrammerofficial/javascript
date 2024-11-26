@@ -1,0 +1,116 @@
+/* variable in css */
+
+:root{
+    --font-size: 1.6rem;
+    --background-color: crimson;
+    --light-color: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+input{
+    border: none;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+    padding: 10px 20px;
+    --font-size: 1.2rem;
+    font-size: var(--font-size);
+    outline: none;
+    border-radius: 6px;
+}
+input:focus{
+    outline: 2px solid rgba(0,0,0,0.2);
+    
+}
+input[type='submit']:focus{
+    cursor: pointer;
+
+}
+
+input[type='submit']{
+    width: fit-content;
+    background-color: var(--background-color);
+    color: var(--light-color);
+}
+#error{
+    color: red;
+    font-size: var(--font-size);
+}
+#succes{
+    color: green;
+    font-size: var(--font-size);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: minmax(200px , 40vw);
+    grid-template-rows: 50px 200px;
+    gap: 40px;
+    padding: 10px;
+    /* border: 2px solid crimson; */
+    max-width: 80vw;
+    height: 100vh;
+    /* justify-content: center; */
+    /* align-content: center;  */
+    place-content: center;
+    margin: auto;
+}
+
+#contactForm{
+    /* border: 2px solid ; */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:2rem;
+
+}
+
+.output{
+       /* border: 2px solid #00f; */
+}
+#succes, #error{
+    position: absolute;
+    /* border: 2px solid; */
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    display: none;
+    place-content: center;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    height: 50vh;
+    width: 50vw;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+    transition: all 0.5s ease-in-out;
+}
+#true{
+    font-size: 6rem;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    color: green;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ccc;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: red;
+    z-index: 10; /* Ensure the close button is visible above other elements */
+}
+
+
+.close:hover{
+    cursor: pointer;
+}
+
+.output > #succes ,  #error{
+    /* border-bottom: 10px solid; */
+    display: none;
+}
