@@ -1,0 +1,232 @@
+/* importing font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+:root{
+    /* colors */
+    --primaryColor: #0D121C;
+    --secondaryColor: #417E38;
+    --lightColor: #aaa;
+    --darkColor: #152A20;
+    --hoverColor: #2C3437;
+    --whiteColor: #fff;
+    --blackColor: #000;
+    --searchHoverBG: #556066;
+   /* font sizes */
+    --fontFamily:  "Open Sans", sans-serif;
+    --headingFontSize: 2.6rem;
+    --bodyFontSize: 1.3rem;
+    --subHeadingFontSize: 1.8rem;
+    /* gap */
+    --gap: 1.2rem;
+    /* padding */
+    --padding: 10px 20px;
+    /* border */
+    --borderRadius: 6px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* global setting */
+a{
+    color: var(--lightColor);
+    text-decoration: none;
+    font-size: var(--bodyFontSize);
+
+}
+
+li{
+    list-style-type: none;
+    
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+
+.top_header{
+    /* background-color: var(--primaryColor);
+    color: var(--lightColor);
+    font-family: var(--fontFamily);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px; */
+    width: 100%;
+    background-color: var(--primaryColor);
+    display: flex;
+    justify-content: center;
+    border-bottom:0.5px solid var(--searchHoverBG);
+}
+
+.nav_container{
+    color: var(--lightColor);
+    font-family: var(--fontFamily);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    /* border: 2px solid var(--secondaryColor); */
+    width: 90%;
+}
+
+
+/* adjusting logo */
+.logo{
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 2px solid var(--secondaryColor); */
+    flex-grow: 0;
+}
+
+.logo svg{
+    width: 50%;
+    cursor: pointer;
+}
+.navbar{
+    /* border: 2px solid var(--secondaryColor); */
+    flex-grow: 8;
+}
+
+.navbar .nav_links{
+    display: flex;
+    /* gap: 20px; */
+}
+.nav_item {
+    padding: var(--padding);
+}
+.nav_link{
+    --bodyFontSize: 16px;
+    font-size: var(--bodyFontSize);
+    color: var(--whiteColor);
+}
+.nav_link:hover{
+    color: var(--whiteColor);
+}
+.nav_links .nav_item:hover{
+    background-color: var(--hoverColor);
+    border-radius: var(--borderRadius);
+}
+
+#arrowParent{
+    /* border: 2px solid var(--secondaryColor); */
+    /* position: relative; */
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+#arrow{
+   transform: rotate(-50deg);
+    padding-left: 6px;
+    position: relative;
+    top: 3px;
+    color: var(--lightColor);
+    font-size: 14px;
+    /* border: 2px solid var(--secondaryColor); */
+   color: var(--whiteColor);
+}
+#arrow:hover{
+    color: var(--lightColor);
+    cursor: pointer;
+}
+/* searchbar */
+
+
+.searchBar{
+    display: flex;
+    /* border: 2px solid var(--secondaryColor); */
+    position: relative;
+    flex-grow: 4;
+    background-color: var(--hoverColor);
+    border-radius: var(--borderRadius);
+}
+.searchBar:hover, #searchInput:hover{
+    --lightColor: ;
+    background-color: var(--searchHoverBG);
+    cursor: pointer;
+    color: var(--whiteColor);
+}
+#searchInput::placeholder{
+    color: var(--lightColor);
+}
+#searchInput{
+    padding: var(--padding) ;
+    /* width: 300px; */
+    border: none;
+    outline: none;
+    background-color: var(--hoverColor);
+    border-radius: var(--borderRadius);
+    text-indent: 20px;
+    color: var(--whiteColor);
+}
+
+
+#searchIcon{
+    position: absolute;
+    color: var(--whiteColor);
+    z-index: 10;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+#searchShortCutCode{
+    position: absolute;
+    color: var(--lightColor);
+    z-index: 10;
+    top: 50%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+}
+
+/* icons link */
+.icons_Link{
+    display: flex;
+    flex-grow: 2;
+    align-self: center;
+    /* gap: var(--gap); */
+    /* border: 2px solid var(--secondaryColor); */
+    cursor: pointer;
+    justify-content: flex-end;
+}
+.icons_Link i{
+    --gap: 10px 10px;
+    padding: var(--gap);
+    border-radius: var(--borderRadius);
+    color: var(--whiteColor);
+}
+.icons_Link i:hover{
+    background-color: var(--hoverColor);
+    
+}
+
+
+/* header ends */
+
+/* hero section starts */
+
+.hero-section{
+    width:100%;
+    height:600px;
+    background-color:var(--darkColor);
+
+}
+
+.btn{
+    border-radius: 1px solid var(--hoverColor);
+
+}
+
+ 
+
+
