@@ -1,0 +1,40 @@
+:root {
+    --primaryColor: #1E90FF;
+    --fontSize: 2rem;
+    --borderRadius: 10px 20px;
+    --padding: 20px 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 10%);
+    height: 100vh;
+    gap: 2rem;
+    place-content: center;
+}
+
+.btn {
+    background-color: var(--primaryColor);
+    border: none;
+    border-radius: var(--borderRadius);
+    padding: var(--padding);
+    --textColor: #fff;
+    color: var(--textColor);
+    font-size: var(--fontSize);
+    cursor: pointer;
+}
+#increment{
+    background: green!important;
+    color: var(--textColor);
+    
+}
+#decrement{
+    background: red !important;
+    color: var(--textColor);
+}
