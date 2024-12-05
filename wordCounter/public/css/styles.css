@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --priamryColor: #428BCA;
+    --darkColor: #202020;
+    --primaryTintColor: #D9EDF7;
+    --fontFamily:  "Roboto", sans-serif;
+    --bodyFontSize: 1.2rem;
+    --headingFontSize: 2rem;
+    --linkFontSize: 1.3rem;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: var(--fontFamily);
+}
+.header{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--priamryColor);
+}
+
+.navbar{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .logo > img{
+    width: 60%;
+    cursor: pointer;
+}
+.nav_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+}
+.nav_links > .nav_item{
+    list-style: none;
+}
+.nav_links > .nav_item > .nav_link{
+    text-decoration: none;
+    font-size: var(--linkFontSize);
+    font-weight: 400;
+    color: var(--primaryTintColor);
+    padding: 6px;
+    border-radius: 6px;
+}
+.nav_link:hover{
+    background-color: var(--darkColor);
+}
+
+/* sidebar */
+
+/* editor */
+#main{
+    /* border: 2px solid var(--priamryColor); */
+    display: flex;     
+    column-gap: 1.4rem;
+    margin: 4rem 2rem;
+}
+.editor{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#output{
+    background-color: var(--primaryTintColor);
+    padding: 2rem;
+    border-radius: 0.6rem;
+}
+#textarea{
+    
+    width: 100%;
+    border: 2px solid var(--primaryTintColor);
+}
+#sidebar{
+    order: 2;
+    width: 20%;
+    background-color: #202020;
+    padding: 1.8rem;
+    color: var(--primaryTintColor);
+    border-radius: 1.2rem;
+}
+#sidebar > .side_links{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+#sidebar li{
+    list-style-type: none;
+}
+#sidebar a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--primaryTint);
+    
+}
+
