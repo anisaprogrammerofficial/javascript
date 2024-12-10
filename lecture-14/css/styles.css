@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #1c1c1c;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+}
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+.header .navbar .logo a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #fff;
+}
+.header .navbar .nav_links {
+  display: flex;
+  gap: 1.3rem;
+}
+.header .navbar .nav_links .nav_item {
+  list-style-type: none;
+}
+.header .navbar .nav_links .nav_item .nav_link {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+/*# sourceMappingURL=styles.css.map */

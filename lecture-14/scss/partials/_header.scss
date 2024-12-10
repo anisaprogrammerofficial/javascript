@@ -1,0 +1,38 @@
+$font-size: 2rem;
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+.header{
+    background-color: #1c1c1c;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        .logo{
+
+            a{
+                font-size: $font-size;
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+        .nav_links{
+            display: flex;
+            gap: 1.3rem;
+            .nav_item{
+                list-style-type: none;
+                .nav_link{
+                    text-decoration: none;
+                    color: aliceblue;
+                }
+            }
+        }
+    }
+   
+   
+}
