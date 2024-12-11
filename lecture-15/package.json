@@ -1,0 +1,15 @@
+{
+  "name": "lecture-15",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass --watch scss/app.scss css/app.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "sass": "^1.82.0"
+  }
+}

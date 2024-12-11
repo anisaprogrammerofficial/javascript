@@ -1,0 +1,48 @@
+@use 'partials/default';
+@import 'reset';
+// moduels 
+
+body{
+    background-color: default.$bgColor;
+}
+
+// cardTheme 
+
+@mixin cardTheme($bgColor: #ff0, $color: #1c1c1c,$width: 20%){
+    background: $bgColor;
+    color: $color;
+    width: $width;
+}
+
+.card{
+    @include cardTheme(#ccc, #000, 450px);
+}
+
+.product{
+    @include cardTheme($bgColor: red, $color: #fff, $width: 50%);
+    img{
+        width: 100%;
+
+    }
+}
+
+
+
+// extend /inheritence 
+
+
+%message-thread{
+    border: 2px solid #ccc;
+    color: #333;
+    padding: 10px;
+}
+
+.success{
+    @extend %message-thread;
+    border: 2px solid #ff0;
+    color: green;
+}
+.error{
+    @extend %message-thread;
+    color: red;
+}

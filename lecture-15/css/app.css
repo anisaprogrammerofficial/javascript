@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+body {
+  background-color: #1c1c1c;
+}
+
+.card {
+  background: #ccc;
+  color: #000;
+  width: 450px;
+}
+
+.product {
+  background: red;
+  color: #fff;
+  width: 50%;
+}
+.product img {
+  width: 100%;
+}
+
+.error, .success {
+  border: 2px solid #ccc;
+  color: #333;
+  padding: 10px;
+}
+
+.success {
+  border: 2px solid #ff0;
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+/*# sourceMappingURL=app.css.map */

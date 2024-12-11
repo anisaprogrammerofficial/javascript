@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../scss/reset.scss","../scss/app.scss","../scss/partials/_default.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;;;AAGJ;EACI;;;ACHJ;EACI,kBCLM;;;ADgBV;EALI,YAMmB;EALnB,OAKyB;EAJzB,OAI+B;;;AAGnC;EATI,YAU6B;EAT7B,OAS0C;EAR1C,OAQwD;;AACxD;EACI;;;AAUR;EACI;EACA;EACA;;;AAGJ;EAEI;EACA;;;AAEJ;EAEI","file":"app.css"}
