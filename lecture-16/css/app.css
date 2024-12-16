@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: grid;
+  background-color: #1c1c1c;
+  place-content: center;
+  height: 100vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.container .card {
+  background-color: #333;
+  display: grid;
+  width: 50vw;
+  height: 50vh;
+  padding: 2rem;
+  border-radius: 0.6rem;
+}
+.container .card #textForm {
+  display: grid;
+}
+.container .card .output {
+  color: #999;
+  display: flex;
+  gap: 2rem;
+}
+.container .card .output p {
+  width: fit-content;
+}
+.container .card .output p .char {
+  color: #6b0cf9 !important;
+  font-size: 1.3rem;
+}
+.container .card #inputMessage {
+  height: fit-content;
+  padding: 2rem;
+  border: none;
+  font-size: 1.3rem;
+  outline: none;
+  border-radius: 0.4rem;
+}
+.container .card #submit {
+  height: fit-content;
+  width: fit-content;
+  padding: 1rem 2rem;
+  background-color: #6b0cf9;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  font-size: 1.4rem;
+  border-radius: 0.3rem;
+  transition: all ease-in-out 0.3s;
+}
+.container .card #submit:hover {
+  color: #fff;
+  background-color: #4301a6;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=app.css.map */

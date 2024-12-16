@@ -1,0 +1,61 @@
+@forward 'inc/reset';
+@use 'inc/var';
+
+.container{
+    display: grid;
+    background-color: var.$primaryColor;
+    place-content: center;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    .card{
+        background-color: #333;
+        display: grid;
+        width: 50vw;
+        height: 50vh;
+        padding: 2rem;
+        border-radius: 0.6rem;
+        #textForm{
+            display: grid;
+        }
+        .output{
+            color: var.$lightGray;
+            display: flex;
+            gap: 2rem;
+            p{
+                width: fit-content;
+                // border: 2px solid crimson;
+                .char{
+                    color: #6b0cf9 !important;
+                    font-size: 1.3rem;
+                }
+            }
+            
+        }
+        #inputMessage{
+            height: fit-content;
+            padding: 2rem;
+            border: none;
+            font-size: 1.3rem;
+            outline: none;
+            border-radius: 0.4rem;
+        }
+        #submit{
+            height: fit-content;
+            width: fit-content;
+            padding: 1rem 2rem;
+            background-color: #6b0cf9;
+            color: #fff;
+            font-weight: 600;
+            border: none;
+            font-size: 1.4rem;
+            border-radius: 0.3rem;
+            transition: all ease-in-out 0.3s;
+            &:hover{
+                color: var.$whiteColor;
+                background-color: #4301a6;
+                cursor: pointer;
+            }
+        }
+    }
+    
+}

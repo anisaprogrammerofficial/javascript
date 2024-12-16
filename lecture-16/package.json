@@ -1,0 +1,5 @@
+{
+    "scripts": {
+        "sass": "sass --watch scss/app.scss css/app.css"
+    }
+}
