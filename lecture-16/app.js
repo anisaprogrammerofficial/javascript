@@ -68,19 +68,55 @@
 
 let userInput = document.getElementById('inputMessage');
 
-let proccessBtn = document.getElementById('submit')
+let upperCaseBtn = document.getElementById('UpperCase')
+let lowerCaseBtn = document.getElementById('LowerCase')
 
 let charWithSpace = document.getElementById('charWithSpace');
 let asciCode = document.getElementById('asciCode');
+let wordWithSpace = document.getElementById('wordsWithSpace')
 // event listener 
 
-proccessBtn.addEventListener('click', (e)=>{
-    e.preventDefault()
-    let userMessage = userInput.value; 
-    let totalCharwithSpace = userMessage.length;
-    let asciValue = userMessage.charCodeAt(0);
+let userMessage = "";
 
-    // output
-    charWithSpace.innerText = totalCharwithSpace;
+const calcChar = () =>{
+    userMessage = userInput.value; 
+    let totalCharwithSpace = userMessage.length;
+     // output
+     charWithSpace.innerText = totalCharwithSpace;
+}
+
+const checkAsciCode = () =>{
+    let asciValue = userMessage.charCodeAt(0);   
     asciCode.innerText = asciValue;
+}
+
+const wordsCalc = () =>{
+    console.log(userMessage.length)
+    let splitMessage = userMessage.split(' ');
+    wordWithSpace.innerText = splitMessage.length;
+}
+
+userInput.addEventListener('keyup', (e)=>{
+    e.preventDefault();
+    calcChar()
+    checkAsciCode()
+    wordsCalc()
+
+})
+
+const convertToUperCase = () =>{
+    let Capital = userMessage.toUpperCase();
+    userInput.value = Capital;
+}
+const convertToLowerCase = () =>{
+    let lowerCase = userMessage.toLowerCase();
+    userInput.value = lowerCase;
+}
+lowerCaseBtn.addEventListener('click', (e)=>{
+    e.preventDefault();
+    convertToLowerCase();
+})
+upperCaseBtn.addEventListener('click', (e)=>{
+    e.preventDefault()
+    convertToUperCase();
 })

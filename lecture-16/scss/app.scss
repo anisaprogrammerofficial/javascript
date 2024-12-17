@@ -11,7 +11,7 @@
         background-color: #333;
         display: grid;
         width: 50vw;
-        height: 50vh;
+        height: 80vh;
         padding: 2rem;
         border-radius: 0.6rem;
         #textForm{
@@ -39,7 +39,7 @@
             outline: none;
             border-radius: 0.4rem;
         }
-        #submit{
+        .btn{
             height: fit-content;
             width: fit-content;
             padding: 1rem 2rem;

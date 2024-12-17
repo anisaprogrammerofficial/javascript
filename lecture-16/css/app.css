@@ -20,7 +20,7 @@ html, body {
   background-color: #333;
   display: grid;
   width: 50vw;
-  height: 50vh;
+  height: 80vh;
   padding: 2rem;
   border-radius: 0.6rem;
 }
@@ -47,7 +47,7 @@ html, body {
   outline: none;
   border-radius: 0.4rem;
 }
-.container .card #submit {
+.container .card .btn {
   height: fit-content;
   width: fit-content;
   padding: 1rem 2rem;
@@ -59,7 +59,7 @@ html, body {
   border-radius: 0.3rem;
   transition: all ease-in-out 0.3s;
 }
-.container .card #submit:hover {
+.container .card .btn:hover {
   color: #fff;
   background-color: #4301a6;
   cursor: pointer;
