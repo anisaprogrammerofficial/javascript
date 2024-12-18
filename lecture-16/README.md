@@ -44,4 +44,17 @@ It is read only. str[0] = "A" gives no error (but does not work!)
 
 # Extracting String Parts
 
+3 methods for extracting a part of a string:
+
+slice(start, end)
+substring(start, end)
+substr(start, length)
+
+
+### JavaScript String slice()
+slice() extracts a part of a string and returns the extracted part in a new string.
+
+The method takes 2 parameters: start position, and end position (end not included).
+
+
 

@@ -120,3 +120,30 @@ upperCaseBtn.addEventListener('click', (e)=>{
     e.preventDefault()
     convertToUperCase();
 })
+
+// theme switcher
+
+
+const lightModeBtn = document.getElementById('light_mode')
+const darkModeBtn = document.getElementById('dark_mode')
+let container = document.getElementsByClassName('container')[0];
+const themeSwitcherBtn = document.getElementById('themeSwitcher');
+
+themeSwitcherBtn.addEventListener('click', ()=>{
+    toggleBtn()
+})
+
+const toggleBtn = () =>{
+
+    if(themeSwitcherBtn.innerText==='toggle_on'){
+        themeSwitcherBtn.innerText = 'toggle_off'
+        container.classList.add('lightmode')
+        container.classList.remove('darkmode')
+    
+    }else{
+        themeSwitcherBtn.innerText = 'toggle_on'
+        container.classList.add('darkmode')
+        container.classList.remove('lightmode')
+    }
+}
+

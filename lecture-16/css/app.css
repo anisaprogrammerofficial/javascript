@@ -9,12 +9,31 @@ html, body {
   height: 100%;
 }
 
+.lightmode {
+  background-color: #fff;
+}
+
+.darkmode {
+  background-color: #1c1c1c;
+}
+
 .container {
   display: grid;
-  background-color: #1c1c1c;
   place-content: center;
   height: 100vh;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.container .icons {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  color: #6b0cf9;
+  display: flex;
+  gap: 2rem;
+}
+.container .icons span {
+  cursor: pointer;
+  font-size: 4rem;
 }
 .container .card {
   background-color: #333;
